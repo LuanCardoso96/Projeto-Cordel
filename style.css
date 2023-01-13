@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bebas+Neue&family=Passion+One&display=swap');
+/*font-family: 'Passion One', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bebas+Neue&family=Passion+One&family=Sriracha&display=swap');
+
+/*font-family: 'Sriracha', cursive;*/
+ *{
+
+    margin: 0px;
+    padding: 0px;
+ }
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgrey;
+   
+}
+header {
+    background-color:  black;
+    color: white;
+    text-align: center; /*alinamento do texto 1*/
+
+}
+header > h1 {
+    font-family: 'Sriracha', cursive;
+    padding-top: 50px; /* afastamento do topo*/
+    font-variant: small-caps;
+    font-size: 10vw; /* view port ! 10% do tamanho da tela seja ela grande ou pequena*/
+
+}
+
+
+header > p {
+     padding-bottom:  50px;
+     font-size: 25pt;
+
+}
+header a, footer a {
+    color: rgb(210, 207, 233);
+    text-decoration: none; /* Retira o Sublinhado do texto com Link*/
+    font-weight: bolder; /* fonte em negrito*/
+    color: ;
+    padding: 5px 5px 5px 5px;
+}
+header a:hover, footer a:hover {
+    text-decoration: underline; /* O texto marcado com hover fica com sublinhado ao passar o mouse*/
+}
+section {
+    font-family: 'Sriracha', cursive;
+    padding-top: 18vh;
+    padding-bottom: 10vh; /* Efeito Paralax em View port*/
+    line-height: 2em; /* Espaçamento entre as Letras*/
+    padding-left: 30px;
+    font-size: 3vw;
+      
+}
+
+section.normal {
+    background-color: rgb(228, 218, 218);
+    color: rgb(5, 1, 1);
+}
+section.imagem {
+ background-color: rgba(51, 29, 29, 0.281);
+ color: white;
+ box-shadow: inset 6px 6px 13px 0px black; /*Sombra interna */ 
+ background-attachment: fixed; /* Imagem fixada no fundo ! efeito paralax*/
+
+}
+section.imagem > p {
+    background-color: black;
+    font-size: 3vw;
+    padding-right: 10px;
+    border: 4vw;
+    display: inline-block; /* Transforma em Caixa que se adapta ao tamanho do conteudo*/
+    text-shadow: 1px 1px 0px black;
+}
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 2vw;
+    
+}
+:hover > a {
+    background-color: rgba(0, 0, 255, 0.178);
+    text-align: center;
+    text-shadow: white
+}
+audio {
+    background-color: blanchedalmond;
+    border-radius: 2px;
+    padding: 5px
+    
+ 
+}
+    
+    
+
